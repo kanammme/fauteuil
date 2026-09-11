@@ -1,0 +1,30 @@
+{
+  "name": "fauteuil-portfolio-demo",
+  "version": "1.0.0",
+  "description": "Site web de démonstration Fauteuil - Coiffeur Créateur fictif à Nancy (projet portfolio)",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": ["coiffeur", "nancy", "salon", "coiffure", "vintage"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "14.2.18",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.6",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.5.3",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.7.3"
+  }
+}

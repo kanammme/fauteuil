@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 245, 241, 234; /* blanc-casse */
+  --background-start-rgb: 11, 11, 13; /* noir-profond */
+  --background-end-rgb: 15, 27, 43; /* bleu-nuit */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+}
+
+/* Styles personnalisés pour les sélections de texte */
+::selection {
+  background-color: rgba(198, 160, 82, 0.3); /* doré avec transparence */
+  color: rgb(245, 241, 234); /* blanc-casse */
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(11, 11, 13); /* noir-profond */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(198, 160, 82, 0.5); /* doré avec transparence */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(198, 160, 82, 0.8); /* doré plus visible */
+}
+
+/* Animation Ken Burns - zoom avant très lent pour les photos hero */
+@keyframes ken-burns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-ken-burns {
+  animation: ken-burns 25s linear infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Effet d'ombre lumineuse pour les boutons */
+.shadow-glow {
+  box-shadow: 0 4px 20px rgba(198, 160, 82, 0.3), 0 0 10px rgba(212, 175, 106, 0.2);
+}
+
+/* Animation plus douce pour les boutons */
+.scale-102 {
+  transform: scale(1.02);
+}
