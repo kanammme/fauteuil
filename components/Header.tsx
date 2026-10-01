@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Logo from './Logo'
 import BookingButton from './BookingButton'
+import DemoRibbon from './DemoRibbon'
 
 const Header: React.FC = () => {
   const navItems = [
@@ -50,6 +51,7 @@ const Header: React.FC = () => {
           isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
+        <DemoRibbon />
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}

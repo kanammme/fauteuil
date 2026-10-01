@@ -49,10 +49,12 @@ const MentionsLegalesPage = () => {
                   <h2 className="font-cinzel text-2xl text-dore">1. Éditeur du site</h2>
                   <div className="space-y-2 font-cormorant text-blanc-casse/90">
                     <p><strong>Projet :</strong> Fauteuil (Site de démonstration)</p>
-                    <p><strong>Responsable :</strong> AL H · Digital Studio</p>
-                    <p><strong>Adresse :</strong> 12 rue des Artisans, 54000 Nancy (Adresse fictive)</p>
-                    <p><strong>Téléphone :</strong> 06 12 34 56 78 (Numéro fictif)</p>
-                    <p><strong>Email :</strong> contact@lefauteuilnoir-demo.fr</p>
+                    <p><strong>Éditeur :</strong> Mohamed AL ACHICHI, AL H · Digital Studio (micro-entrepreneur)</p>
+                    <p><strong>SIRET :</strong> 884 857 715 00012</p>
+                    <p><strong>Adresse du siège :</strong> 5 boulevard de Baudricourt, 54600 Villers-lès-Nancy</p>
+                    <p><strong>Email :</strong> contact@al-h.fr</p>
+                    <p><strong>Directeur de la publication :</strong> Mohamed AL ACHICHI</p>
+                    <p>L&apos;adresse du salon (12 rue des Artisans) et ses coordonnées affichées sur le site sont fictives.</p>
                   </div>
                 </div>
 
@@ -60,8 +62,8 @@ const MentionsLegalesPage = () => {
                 <div className="space-y-4">
                   <h2 className="font-cinzel text-2xl text-dore">2. Hébergement</h2>
                   <div className="space-y-2 font-cormorant text-blanc-casse/90">
-                    <p>Ce site est hébergé par Vercel Inc.</p>
-                    <p><strong>Adresse :</strong> 340 S Lemon Ave #4133, Walnut, CA 91789, USA</p>
+                    <p>Ce site est hébergé par Netlify, Inc.</p>
+                    <p><strong>Adresse :</strong> 101 2nd Street, San Francisco, CA 94105, États-Unis</p>
                   </div>
                 </div>
 
@@ -70,7 +72,7 @@ const MentionsLegalesPage = () => {
                   <h2 className="font-cinzel text-2xl text-dore">3. Propriété intellectuelle</h2>
                   <div className="space-y-3 font-cormorant text-blanc-casse/90">
                     <p>Le code source de ce projet est la propriété intellectuelle de son auteur. Les textes et la mise en page sont créés pour ce projet de démonstration.</p>
-                    <p>Les images utilisées dans ce projet proviennent de sources libres de droit (par exemple, Unsplash, Pexels) ou sont des créations originales pour ce portfolio. Toute reproduction est interdite sans autorisation.</p>
+                    <p>Les photographies de ce projet ont été générées par intelligence artificielle pour ce portfolio. Toute reproduction est interdite sans autorisation.</p>
                   </div>
                 </div>
 
@@ -79,7 +81,7 @@ const MentionsLegalesPage = () => {
                   <h2 className="font-cinzel text-2xl text-dore">4. Données personnelles</h2>
                   <div className="space-y-3 font-cormorant text-blanc-casse/90">
                     <p>Ce site de démonstration ne collecte aucune donnée personnelle des visiteurs. Aucun formulaire de contact n'est actif et aucun cookie de suivi n'est utilisé.</p>
-                    <p>L'adresse e-mail et le numéro de téléphone indiqués sont fictifs et ne doivent pas être utilisés.</p>
+                    <p>Les boutons d&apos;appel et de prise de rendez-vous n&apos;appellent aucun numéro : ils expliquent leur fonctionnement sur un vrai site.</p>
                   </div>
                 </div>
 

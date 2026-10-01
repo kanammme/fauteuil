@@ -2,12 +2,13 @@
 import React from 'react'
 import Link from 'next/link'
 import Logo from './Logo'
+import DemoAction from '@/components/DemoAction'
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
 
   const navItems = [
-    { label: 'Services', href: '/services' },
+    { label: 'Services', href: '/#services' },
     { label: 'Galerie', href: '/galerie' },
     { label: 'À propos', href: '/a-propos' },
     { label: 'Contact', href: '/contact' },
@@ -67,7 +68,7 @@ const Footer: React.FC = () => {
               ))}
             </ul>
             <p className='font-cormorant text-sm text-blanc-casse/60 mt-4 text-center md:text-left'>
-              Sur réservation : 06 12 34 56 78
+              Sur réservation uniquement
             </p>
           </div>
 
@@ -85,22 +86,20 @@ const Footer: React.FC = () => {
 
               <div>
                 <h4 className='font-cormorant text-blanc-casse mb-2'>Téléphone</h4>
-                <a
-                  href="tel:+33612345678"
+                <DemoAction kind="appeler"
                   className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 inline-block'
                 >
-                  06 12 34 56 78
-                </a>
+                  Appeler le salon
+                </DemoAction>
               </div>
 
               <div>
                 <h4 className='font-cormorant text-blanc-casse mb-2'>Email</h4>
-                <a
-                  href="mailto:contact@lefauteuilnoir-demo.fr"
+                <DemoAction kind="ecrire"
                   className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 inline-block'
                 >
-                  contact@lefauteuilnoir-demo.fr
-                </a>
+                  Écrire au salon
+                </DemoAction>
               </div>
 
               <div>

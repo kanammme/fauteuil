@@ -1,21 +1,15 @@
 'use client'
 
 import React from 'react'
+import DemoAction from './DemoAction'
 
 interface BookingButtonProps {
   variant?: 'header' | 'hero' | 'mobile' | 'footer'
 }
 
 const BookingButton: React.FC<BookingButtonProps> = ({ variant = 'hero' }) => {
-  const phoneNumber = '0612345678'
-  const phoneUrl = `tel:${phoneNumber}`
-
-  const handleClick = () => {
-    // Pour l'instant, déclenche un appel/SMS vers le numéro
-    // Facilement remplaçable plus tard par un widget Planity/Fresha/Calendly
-    window.open(phoneUrl, '_blank')
-  }
-
+  // Site de démonstration : le bouton explique ce qu'il ferait (agenda, appel)
+  // au lieu de composer un numéro fictif.
   // Styles selon la variante
   const baseStyles = "inline-flex items-center justify-center font-cormorant font-semibold tracking-wide transition-all duration-500 ease-out transform hover:scale-102 hover:shadow-glow focus:outline-none focus:ring-2 focus:ring-dore focus:ring-opacity-50"
 
@@ -34,10 +28,9 @@ const BookingButton: React.FC<BookingButtonProps> = ({ variant = 'hero' }) => {
   }
 
   return (
-    <button
-      onClick={handleClick}
+    <DemoAction
+      kind="reserver"
       className={`${baseStyles} ${variantStyles[variant]}`}
-      aria-label="Prendre rendez-vous par téléphone"
     >
       <svg
         className={`${iconSize[variant]} mr-2`}
@@ -54,7 +47,7 @@ const BookingButton: React.FC<BookingButtonProps> = ({ variant = 'hero' }) => {
         />
       </svg>
       Prendre rendez-vous
-    </button>
+    </DemoAction>
   )
 }
 

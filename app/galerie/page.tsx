@@ -4,6 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import Header from '@/components/Header'
 import PageHero from '@/components/PageHero'
+import DemoAction from '@/components/DemoAction'
 
 export const metadata: Metadata = {
   title: "Galerie — Fauteuil | Coiffeur Démo Nancy",
@@ -128,8 +129,7 @@ const GaleriePage = () => {
               >
                 Découvrir le projet
               </a>
-              <a
-                href="tel:+33612345678"
+              <DemoAction kind="appeler"
                 className="inline-flex items-center justify-center px-6 py-3 bg-dore/10 border border-dore/30 text-dore hover:bg-dore/20 hover:text-dore-clair rounded-lg transition-all duration-500 font-cormorant font-semibold"
               >
                 <svg
@@ -146,8 +146,8 @@ const GaleriePage = () => {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                06 12 34 56 78
-              </a>
+                Appeler le salon
+              </DemoAction>
             </div>
           </div>
         </div>

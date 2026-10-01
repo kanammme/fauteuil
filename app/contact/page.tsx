@@ -4,6 +4,7 @@ import React from 'react'
 import Header from '@/components/Header'
 import PageHero from '@/components/PageHero'
 import BookingButton from '@/components/BookingButton'
+import DemoAction from '@/components/DemoAction'
 
 export const metadata: Metadata = {
   title: 'Contact — Fauteuil | Coiffeur Démo Nancy',
@@ -130,12 +131,11 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h4 className='font-cormorant text-blanc-casse mb-1'>Téléphone</h4>
-                      <a
-                        href="tel:+33612345678"
+                      <DemoAction kind="appeler"
                         className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 text-lg block'
                       >
-                        06 12 34 56 78
-                      </a>
+                        Appeler le salon
+                      </DemoAction>
                       <p className='font-cormorant text-blanc-casse/60 text-sm mt-1'>
                         Sur réservation uniquement
                       </p>
@@ -162,12 +162,11 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h4 className='font-cormorant text-blanc-casse mb-1'>Email</h4>
-                      <a
-                        href="mailto:contact@lefauteuilnoir-demo.fr"
+                      <DemoAction kind="ecrire"
                         className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 text-lg block'
                       >
-                        contact@lefauteuilnoir-demo.fr
-                      </a>
+                        Écrire au salon
+                      </DemoAction>
                     </div>
                   </div>
                 </div>

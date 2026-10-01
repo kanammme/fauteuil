@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 import { Cinzel, Cormorant_Garamond, Inter } from 'next/font/google'
 import '../styles/globals.css'
 import Footer from '@/components/Footer'
-import SchemaData from '@/components/SchemaData'
 
 // Configuration des polices Google Fonts
 const cinzel = Cinzel({
@@ -26,8 +25,8 @@ const inter = Inter({
   display: 'swap',
 })
 
-// URL de base pour les métadonnées
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://lefauteuilnoir-demo.fr'
+// URL de base pour les métadonnées (aperçus de partage WhatsApp, SMS, réseaux)
+const siteUrl = 'https://salondecoiffurefauteuil.netlify.app'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -59,16 +58,10 @@ export const metadata: Metadata = {
     description: "Site de démonstration réalisé à des fins de portfolio. Ce projet ne représente aucun établissement réel et n'a aucune vocation commerciale.",
     images: ['/images/interior/interior-fauteuil-vintage.jpg'],
   },
+  // Salon fictif : le site ne doit pas apparaître dans Google comme un vrai salon
   robots: {
-    index: true,
+    index: false,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
   },
   // Favicon SVG détecté automatiquement par Next.js depuis app/icon.svg
 }
@@ -80,9 +73,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`${cinzel.variable} ${cormorant.variable} ${inter.variable}`}>
-      <head>
-        <SchemaData />
-      </head>
       <body className="min-h-screen bg-noir-profond text-blanc-casse font-inter overflow-x-hidden">
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:px-4 focus:py-2 focus:bg-dore focus:text-noir-profond">Aller au contenu principal</a>
         <main id="main-content" className="min-h-screen">
