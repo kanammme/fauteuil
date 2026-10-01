@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Contenu */}
-      <div className="relative z-10 container mx-auto px-4 pt-32 pb-20 text-center">
+      <div className="relative z-10 container mx-auto px-4 pt-48 pb-20 text-center">
         {/* Badge de localisation */}
         <div className="inline-flex items-center justify-center mb-8 px-4 py-2 bg-dore/10 backdrop-blur-sm rounded-full border border-dore/30">
           <svg

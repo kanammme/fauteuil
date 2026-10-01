@@ -15,7 +15,7 @@ const PageHero: React.FC<PageHeroProps> = ({
   backgroundAlt = 'Arrière-plan de la page'
 }) => {
   // Hauteur approximative du header fixe (à ajuster si le header change)
-  const headerHeight = 'pt-32' // Correspond à 8rem, même que le Hero principal
+  const headerHeight = 'pt-48' // 12rem : header fixe + bandeau démo (même valeur que le Hero principal)
 
   return (
     <section className={`relative min-h-[60vh] flex items-center justify-center overflow-hidden ${headerHeight}`}>
