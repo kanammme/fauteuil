@@ -55,10 +55,11 @@ const ServicesSection: React.FC = () => {
 
         {/* Grille des services */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {services.map((service) => (
+          {services.map((service, index) => (
             <div
               key={service.id}
-              className="group bg-bleu-nuit/30 backdrop-blur-sm rounded-lg p-4 md:p-6 lg:p-8 border border-dore/10 hover:border-dore/30 transition-all duration-500 hover:transform hover:scale-[1.02]"
+              // Dernière carte seule sur sa ligne (7 cartes) : centrée au lieu d'être collée à gauche
+              className={`${index === services.length - 1 && services.length % 3 === 1 ? 'lg:col-start-2' : ''} ${index === services.length - 1 && services.length % 2 === 1 ? 'md:col-span-2 md:w-full md:max-w-[calc(50%-1rem)] md:mx-auto lg:col-span-1 lg:max-w-none' : ''} group bg-bleu-nuit/30 backdrop-blur-sm rounded-lg p-4 md:p-6 lg:p-8 border border-dore/10 hover:border-dore/30 transition-all duration-500 hover:transform hover:scale-[1.02]`}
             >
               <h3 className="font-cinzel text-2xl text-dore mb-4 group-hover:text-dore-clair transition-colors duration-300">
                 {service.title}

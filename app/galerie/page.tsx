@@ -107,7 +107,7 @@ const GaleriePage = () => {
                 </div>
                 {/* Légende au survol */}
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-noir-profond/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h3 className='font-cormorant text-blanc-casse text-lg'>{image.title}</h3>
+                  <h2 className='font-cormorant text-blanc-casse text-lg'>{image.title}</h2>
                 </div>
                 {/* Effet de bordure dorée au survol */}
                 <div className="absolute inset-0 border border-transparent group-hover:border-dore/30 transition-all duration-500 rounded-lg" />

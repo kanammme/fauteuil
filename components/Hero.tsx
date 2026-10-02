@@ -19,6 +19,8 @@ const Hero: React.FC = () => {
         />
         {/* Overlay sombre pour estomper les détails et améliorer la lisibilité */}
         <div className="absolute inset-0 bg-noir-profond/75" />
+        {/* Mobile : fondu en haut, l'enseigne de la photo apparaissait coupée sous le header */}
+        <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-noir-profond via-noir-profond/80 to-transparent md:hidden" />
         {/* Dégradé radial pour éclaircir légèrement les bords (lanternes) et assombrir le centre (texte) */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-noir-profond/40 to-noir-profond/80" />
         {/* Overlay doré subtil */}

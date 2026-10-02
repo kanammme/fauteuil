@@ -134,13 +134,13 @@ const Logo: React.FC<LogoProps> = ({ variant = 'horizontal', className = '' }) =
   if (variant === 'horizontal') {
     return (
       <div className={`relative flex items-center ${className}`}>
-        <div className="relative px-8 py-4">
+        <div className="relative px-6 py-2 md:px-8 md:py-4">
           <OrnamentalFrame />
           <div className="relative z-10 flex flex-col items-center text-center">
-            <h1 className="font-cinzel text-2xl md:text-3xl font-bold tracking-widest uppercase leading-tight" style={{ color: colors.primary }}>
+            <span className="block font-cinzel text-xl md:text-3xl font-bold tracking-widest uppercase leading-tight" style={{ color: colors.primary }}>
               Fauteuil
-            </h1>
-            <p className="font-cormorant italic text-sm md:text-base mt-1 tracking-wide" style={{ color: colors.secondary }}>
+            </span>
+            <p className="font-cormorant italic text-sm md:text-base md:mt-1 tracking-wide" style={{ color: colors.secondary }}>
               Coiffeur Créateur
             </p>
           </div>
@@ -173,13 +173,13 @@ const Logo: React.FC<LogoProps> = ({ variant = 'horizontal', className = '' }) =
   // Version monochrome (pour fonds très sombres)
   return (
     <div className={`relative flex items-center ${className}`}>
-      <div className="relative px-8 py-4">
+      <div className="relative px-6 py-2 md:px-8 md:py-4">
         <OrnamentalFrame />
         <div className="relative z-10 flex flex-col items-center text-center">
-          <h1 className="font-cinzel text-2xl md:text-3xl font-bold tracking-widest uppercase leading-tight" style={{ color: colors.primary }}>
+          <span className="block font-cinzel text-xl md:text-3xl font-bold tracking-widest uppercase leading-tight" style={{ color: colors.primary }}>
             Fauteuil
-          </h1>
-          <p className="font-cormorant italic text-sm md:text-base mt-1 tracking-wide" style={{ color: colors.primary }}>
+          </span>
+          <p className="font-cormorant italic text-sm md:text-base md:mt-1 tracking-wide" style={{ color: colors.primary }}>
             Coiffeur Créateur
           </p>
         </div>

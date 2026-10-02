@@ -16,13 +16,13 @@ const Footer: React.FC = () => {
   ]
 
   const horaires = [
+    { jour: 'Lundi', heures: 'Fermé' },
     { jour: 'Mardi', heures: '9h–12h30 / 14h30–19h' },
+    { jour: 'Mercredi', heures: '9h–12h30 / 14h30–19h' },
     { jour: 'Jeudi', heures: '9h–12h30 / 14h30–19h' },
     { jour: 'Vendredi', heures: '9h–12h30 / 14h30–19h' },
     { jour: 'Samedi', heures: '9h–12h30 / 14h30–19h' },
     { jour: 'Dimanche', heures: 'Fermé' },
-    { jour: 'Lundi', heures: 'Fermé' },
-    { jour: 'Mercredi', heures: 'Fermé' },
   ]
 
   return (
@@ -42,12 +42,12 @@ const Footer: React.FC = () => {
           {/* Navigation */}
           <div className="md:col-span-1">
             <h3 className="font-cinzel text-xl text-dore mb-6 text-center md:text-left">Navigation</h3>
-            <ul className="space-y-3 text-center md:text-left">
+            <ul className="text-center md:text-left">
               {navItems.map((item) => (
                 <li key={item.label}>
                   <Link
                     href={item.href}
-                    className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 inline-block'
+                    className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 inline-flex items-center min-h-[44px]'
                   >
                     {item.label}
                   </Link>
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
               <div>
                 <h4 className='font-cormorant text-blanc-casse mb-2'>Téléphone</h4>
                 <DemoAction kind="appeler"
-                  className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 inline-block'
+                  className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 inline-flex items-center min-h-[44px]'
                 >
                   Appeler le salon
                 </DemoAction>
@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
               <div>
                 <h4 className='font-cormorant text-blanc-casse mb-2'>Email</h4>
                 <DemoAction kind="ecrire"
-                  className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 inline-block'
+                  className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 inline-flex items-center min-h-[44px]'
                 >
                   Écrire au salon
                 </DemoAction>

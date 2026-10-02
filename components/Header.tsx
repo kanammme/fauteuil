@@ -52,7 +52,7 @@ const Header: React.FC = () => {
         }`}
       >
         <DemoRibbon />
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-2 md:py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex-shrink-0">
@@ -87,7 +87,7 @@ const Header: React.FC = () => {
 
               {/* Menu Mobile */}
               <button
-                className="md:hidden text-dore p-2 hover:bg-dore/10 rounded-lg transition-colors"
+                className="md:hidden text-dore p-2.5 hover:bg-dore/10 rounded-lg transition-colors"
                 aria-label="Menu"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >

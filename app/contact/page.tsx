@@ -25,13 +25,13 @@ export const metadata: Metadata = {
 
 const ContactPage = () => {
   const horaires = [
+    { jour: 'Lundi', heures: 'Fermé' },
     { jour: 'Mardi', heures: '9h–12h30 / 14h30–19h' },
+    { jour: 'Mercredi', heures: '9h–12h30 / 14h30–19h' },
     { jour: 'Jeudi', heures: '9h–12h30 / 14h30–19h' },
     { jour: 'Vendredi', heures: '9h–12h30 / 14h30–19h' },
     { jour: 'Samedi', heures: '9h–12h30 / 14h30–19h' },
     { jour: 'Dimanche', heures: 'Fermé' },
-    { jour: 'Lundi', heures: 'Fermé' },
-    { jour: 'Mercredi', heures: 'Fermé' },
   ]
 
   const adresseEncoded = encodeURIComponent('Nancy, France')
@@ -104,7 +104,7 @@ const ContactPage = () => {
                         href={`https://maps.google.com/?q=${adresseEncoded}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className='font-cormorant text-dore hover:text-dore-clair transition-colors duration-300 text-sm inline-block mt-2'
+                        className='font-cormorant text-dore hover:text-dore-clair transition-colors duration-300 text-sm inline-flex items-center min-h-[44px] mt-1'
                       >
                         Voir sur Google Maps →
                       </a>
@@ -132,7 +132,7 @@ const ContactPage = () => {
                     <div>
                       <h4 className='font-cormorant text-blanc-casse mb-1'>Téléphone</h4>
                       <DemoAction kind="appeler"
-                        className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 text-lg block'
+                        className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 text-lg inline-flex items-center min-h-[44px]'
                       >
                         Appeler le salon
                       </DemoAction>
@@ -163,7 +163,7 @@ const ContactPage = () => {
                     <div>
                       <h4 className='font-cormorant text-blanc-casse mb-1'>Email</h4>
                       <DemoAction kind="ecrire"
-                        className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 text-lg block'
+                        className='font-cormorant text-blanc-casse/80 hover:text-dore transition-colors duration-300 text-lg inline-flex items-center min-h-[44px]'
                       >
                         Écrire au salon
                       </DemoAction>
